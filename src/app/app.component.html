@@ -1,0 +1,29 @@
+<div class="main">
+
+  <div class="weather">
+       <h1>{{title | titlecase}} </h1>
+       <input placeholder="Enter Your City Name" (input)="setcity($event)" id="inp" >
+       <button (click)="checkweather()">Check Weather</button>
+       <table>
+        <tr>
+          <td>{{name}}</td>
+        </tr>
+        <tr>
+          <td><img src="{{img}}"/>  </td>
+          <td>{{text}}</td>
+        </tr>
+        <tr>
+          <td>Temperature: {{ temp_c }}°C</td>
+        </tr>
+        <tr>
+          <td>{{wind}}</td>
+        </tr>
+        <tr>
+          <td>{{preassure}}</td>
+        </tr>
+        <tr>
+          <td>{{humididty}}</td>
+        </tr>
+       </table>
+  </div>
+</div>
